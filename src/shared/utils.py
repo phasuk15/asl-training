@@ -13,10 +13,8 @@ HAND_CONNECTIONS = [
 ]
 
 
+# Manually draw hand skeleton using landmark x/y pixel coordinates
 def draw_landmarks(frame, hand_landmarks):
-    """
-    Manually draw hand skeleton using landmark x/y pixel coordinates
-    """
     h, w, _ = frame.shape
     points = []
 
@@ -29,8 +27,8 @@ def draw_landmarks(frame, hand_landmarks):
         cv2.line(frame, points[start], points[end], (255, 255, 255), 1)
 
 
+# Overlay predicted sign and confidence on the frame
 def draw_prediction(frame, label: str, confidence: float):
-    """Overlay predicted sign and confidence on the frame."""
     text = f"{label}  ({confidence:.0%})"
     cv2.putText(
         frame, text,
@@ -43,8 +41,8 @@ def draw_prediction(frame, label: str, confidence: float):
     )
 
 
+# Overlay a small status message at the bottom of the frame
 def draw_status(frame, message: str, color=(0, 200, 255)):
-    """Overlay a small status message at the bottom of the frame."""
     h, _, _ = frame.shape
     cv2.putText(
         frame, message,
