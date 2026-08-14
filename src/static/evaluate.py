@@ -1,18 +1,6 @@
-# ─────────────────────────────────────────────
-#  src/static/evaluate.py  –  live camera accuracy evaluation
-#
-#  Usage (from project root):
-#      python -m src.static.evaluate
-#      python -m src.static.evaluate --signs ABCDE    (test a subset)
-#      python -m src.static.evaluate --no-random      (alphabetical order)
-#      python -m src.static.evaluate --record-secs 4  (longer recording window)
-#
-#  Flow per sign:
-#    1. READY    – target letter shown, 3-second countdown to get into position
-#    2. RECORD   – model predictions collected for N seconds
-#    3. RESULT   – correct / wrong flash with what was predicted
-#  After all signs: summary table printed + saved to evaluation_results.csv
-# ─────────────────────────────────────────────
+
+#  live camera accuracy evaluation
+
 import os
 import csv
 import time

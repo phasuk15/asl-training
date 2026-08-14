@@ -1,6 +1,6 @@
-# ─────────────────────────────────────────────
-#  src/static/classifier.py  –  model loading + inference
-# ─────────────────────────────────────────────
+
+#  model loading + inference
+
 import os
 import pickle
 import numpy as np

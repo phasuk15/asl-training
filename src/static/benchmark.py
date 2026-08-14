@@ -1,11 +1,6 @@
-# ─────────────────────────────────────────────
-#  src/static/benchmark.py  –  Compare SVM, KNN, and MLP on hand landmark data
-#
-#  Usage (from project root):
-#      python -m src.static.benchmark
-#      python -m src.static.benchmark --data data/processed/hand_data.csv --out figures/static
-#      python -m src.static.benchmark --demo --out figures/static   (synthetic data, no CSV needed)
-# ─────────────────────────────────────────────
+
+#  Compare SVM, KNN, and MLP on hand landmark data
+
 import os
 import argparse
 import numpy as np

@@ -1,9 +1,6 @@
-# ─────────────────────────────────────────────
-#  src/static/train.py  –  train SVM, KNN, MLP on hand_data.csv
-#
-#  Usage (from project root):  python -m src.static.train
-#          (reads data/processed/hand_data.csv, writes models/static/)
-# ─────────────────────────────────────────────
+
+# train SVM, KNN, MLP on hand_data.csv
+
 import os
 import json
 import time

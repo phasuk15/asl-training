@@ -1,9 +1,6 @@
-# ─────────────────────────────────────────────
-#  src/static/extract.py  –  landmark extraction from dataset images
-#
-#  Usage (from project root):  python -m src.static.extract
-#          (reads data/raw/asl_alphabet_train/, writes data/processed/hand_data.csv)
-# ─────────────────────────────────────────────
+
+#  andmark extraction from dataset images
+
 import os
 import cv2
 import csv
