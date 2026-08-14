@@ -1,7 +1,5 @@
-"""
-Prepare a raw webcam frame before passing to MediaPipe.
-Applies CLAHE to improve contrast in poor lighting
-"""
+# Prepare a raw webcam frame before passing to MediaPipe.
+# Applies CLAHE to improve contrast in poor lighting
 
 import cv2
 
